@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeColorR(){
+         document.getElementById("heading").style.color= "Red"
+        }
+        function changeColorG(){
+         document.getElementById("heading").style.color= "Green"
+        }
+        function changeColorB(){
+         document.getElementById("heading").style.color= "Blue"
+        }
+        function changeColorY(){
+         document.getElementById("heading").style.color= "Yellow"
+        }
+    </script>
+</head>
+<body>
+    <h1 id="heading">This is the heading</h1>
+    <input type="radio" id="html" name="fav_language" value="HTML" onclick=changeColorR()>
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS" onclick=changeColorG()>
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript" onclick=changeColorB()>
+<label for="javascript">JavaScript</label><br>
+<input type="radio" id="typescript" name="fav_language" value="TypeScript" onclick=changeColorY()>
+<label for="javascript">TypeScript</label>
+</body>
+</html>

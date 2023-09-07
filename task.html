@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sty{
+            color:black;
+            font-size: medium;
+            font-style: italic;
+            background-color: aqua;
+        }
+    </style>
+    <script type="text/javascript">
+        function onHover(id) {
+            document.getElementById(String(id)).classList.add("sty");           
+        }
+        function onOut(id) {
+            document.getElementById(String(id)).classList.remove("sty");           
+        }
+    </script>
+</head>
+
+<body>
+
+    <form >
+        <ol>
+            <li id="1" onmouseover="onHover(1);" onmouseout="onOut(1);">Hey</li>
+            <li id="2" onmouseover="onHover(2);" onmouseout="onOut(2);">Hi</li>
+            <li id="3" onmouseover="onHover(3);" onmouseout="onOut(3);">Hello</li>
+        </ol>
+    </form>
+
+</body>
+</html>

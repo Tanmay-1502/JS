@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fail{
+            color:darked;
+            font-size: medium;
+            font-style: italic;
+            font-weight: bolder;
+        }
+    </style>
+    <script type="text/javascript">
+        function getDetails(){
+            let username=document.getElementById("username").value
+            let password=document.getElementById("password").value
+            validateUser(username, password)
+        }
+
+            function validateUser(username, password){
+                if(username=='Admin' && password=='Admin@123'){
+                  //  alert('success') 
+                 //  document.getElementById("result").style.visibility="visible";
+                 document.getElementById("result").style.color='green'
+                    document.getElementById("result").innerHTML = "Login successfull"
+                }
+                 
+                
+                else{
+                //alert('fail')
+              //  document.getElementById("result").style.visibility="hidden";
+              document.getElementById("result").classList.add("fail")
+                document.getElementById("result").innerHTML= "Login failed"
+                }
+                
+            }
+        
+    </script>
+</head>
+<body>
+    <form id="loginfrm">
+        <label id="result"></label> </form><br/>
+        Enter Username: <input type="text" id="username" placeholder="username"/>
+        Enter password: <input type="password" id="password" placeholder="password"/>
+        <button onclick="getDetails(); return false;" id="login"> Login</button>
+    </form>
+
+</body>
+</html>

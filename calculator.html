@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="First Number" />
+    <input type="number" id="num2" placeholder="Second Number" />
+    <input type="number" id="result" placeholder="Result" />
+    <input type="button" value="+" onclick="add(); return false;" />
+    <input type="button" value="-" onclick="sub(); return false;" />
+    <input type="button" value="x" onclick="mul(); return false;" />
+    <input type="button" value="/" onclick="div(); return false;" />
+
+ 
+
+</body>
+<script type="text/javascript">
+   
+    function add(){
+        let result=document.getElementById('result');
+        let num1= parseFloat(document.getElementById('num1').value)
+        let num2= parseFloat(document.getElementById('num2').value)
+        result.value= num1+num2;
+    }
+    function sub(){
+        let result=document.getElementById('result');
+        let num1= parseFloat(document.getElementById('num1').value)
+        let num2= parseFloat(document.getElementById('num2').value)
+      
+        result.value= num1-num2;
+    }
+    function mul(){
+        let result=document.getElementById('result');
+        let num1= parseFloat(document.getElementById('num1').value)
+        let num2= parseFloat(document.getElementById('num2').value)
+        result.value= num1*num2;
+    }
+    function div(){
+        let result=document.getElementById('result');
+        let num1= parseFloat(document.getElementById('num1').value)
+        let num2= parseFloat(document.getElementById('num2').value)
+        result.value= num1/num2;
+    }
+</script>
+</html>
